@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+
+"""
+Simple tool allow you to store (local or web) links
+and then you can pop a random link and open it.
+"""
+
 import os
 from random import randint
 from sys import argv, exit
@@ -55,7 +61,7 @@ def main():
     """
     Check the argument flag 
     if '--add' or '--push' or '-a' add the passed link to the db 
-    else if '--get' or '--pop' or '-g' delete a random link from the list then return it
+    else if '--get' or '--pop' or '-g' pop a random link then open it
     else if '--list' or '-l' list all links
     """
     is_push_operation = len(argv) == 3 and (argv[1] == '--push' or argv[1] == '--add' or argv[1] == '-a')
@@ -88,7 +94,7 @@ def main():
                 print(colored('No links!', 'red'))
         
     else:
-        print('Usage:\n\trandlink [--push | --add | -a] <link>\t:\tadd a new link\n\trandlink [--pop | --get | -g]\t\t:\tget and delete a randmon link\n\trandlink [--list | -l]\t\t\t:\tlist all links')
+        print('Usage:\n\trandlink [--push | --add | -a] <link>\t:\tadd a new link\n\trandlink [--pop | --get | -g]\t\t:\tpop a random link then open it\n\trandlink [--list | -l]\t\t\t:\tlist all links')
 
 
 if __name__ == "__main__":

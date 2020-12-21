@@ -1,11 +1,7 @@
 #!/usr/bin/python3
 """
-Fetch prayer times
-    - Create prayer class
-    - Get current year, month and day
-    - Create the API endpoint URL
-    - Fetch the API
-    - Parse the respone to get prayer times
+Display the times of the muslims prayers and 
+the remaining time until the next prayer in the day.
 """
 
 from datetime import date, datetime

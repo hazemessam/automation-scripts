@@ -1,14 +1,14 @@
 # Automation Scripts
 
 ## [create.py](create.py)
-Automate the process of creating a remote GitHub repo and initialize a local repo then push its files to the remote repo all with one command.
+Automate the process of creating a remote GitHub repo and initializing a local repo and pushing its files to the remote repo all with one command.
 
 ### Requirements:
 -   install `PyGithub` package.
     ```
     $ pip3 install PyGithub=1.54
     ```
--   Set `TOKEN_PATH` variable to the path of the file that contains the GitHub token. 
+-   Generate a GitHub token then set `TOKEN_PATH` variable to the path of the file that contains the GitHub token. 
 
 ### Usage:
 ```
@@ -33,12 +33,12 @@ All done!
 ----
 
 ## [ptime.py](ptime.py)
-Return the times of the muslims prayers and the remaining time until the next prayer in the day.
+Display the times of the muslims prayers and the remaining time until the next prayer in the day.
 
 ### Usage:
 ```
 $ ./ptime.py
-Fajr     ->  05:14 am
+Fajr     ->  05:14 am  ->  (0:36)
 Dhuhr    ->  11:51 am
 Asr      ->  02:36 pm
 Maghrib  ->  04:54 pm
@@ -78,9 +78,11 @@ Simple tool allow you to store (local or web) links and then you can pop a rando
 ```
 $ ./randlink.py
 Usage:
-        randlink [--push | --add | -a] <link>   :       add a new link
-        randlink [--pop | --get | -g]           :       get and delete a randmon link
-        randlink [--list | -l]                  :       list all links
+    randlink [--push | --add | -a] <link>   :       add a new link
+    randlink [--pop | --get | -g]           :       pop a random link then open it
+    randlink [--list | -l]                  :       list all links
+```
+```
 $ ./randlink.py --add https://www.youtube.com
 $ ./randlink.py --add /home/hazem/media/test.png
 $ ./randlink.py --list

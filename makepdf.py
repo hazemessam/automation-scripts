@@ -1,4 +1,10 @@
 #! /usr/bin/python3
+
+"""
+Convert orderd images inside a folder to a pdf file
+with the name of the folder.
+"""
+
 import os
 import img2pdf
 from termcolor import colored
