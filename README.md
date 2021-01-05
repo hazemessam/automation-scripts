@@ -47,8 +47,8 @@ Isha     ->  06:19 pm
 
 ---
 
-## [makepdf.py](makepdf.py)
-Convert orderd images inside a folder to a pdf file with the name of the folder.
+## [mkpdf.py](mkpdf.py)
+Convert ordered images inside a folder to a pdf file with the name of the folder.
 
 ### Requirements:
 -   Install `img2pdf` package.
@@ -69,7 +69,7 @@ $ ls
 ---
 
 ## [randlink.py](randlink.py)
-Simple tool allow you to store (local or web) links and then you can pop a random link and open it.
+Simple tool allows you to store (local or web) links and then you can pop a random link and open it.
 
 ### Requirements:
 -   Set `DB_FILE_PATH` variable to the path of the file that you want store links in.
