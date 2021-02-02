@@ -8,7 +8,7 @@ Automate the process of creating a remote GitHub repo and initializing a local r
     ```
     $ pip3 install PyGithub=1.54
     ```
--   Generate a GitHub token then set `TOKEN_PATH` variable to the path of the file that contains the GitHub token. 
+-   Generate a GitHub token then add it to your environment variables with name `GIT_TOKEN`. 
 
 ### Usage:
 ```

@@ -11,9 +11,6 @@ import platform
 import os
 import sys
 
-# GitHub token path
-TOKEN_PATH = '/home/hazem/data/.gitoken'
-
 
 # Handle the Error Messege
 def error(msg):
@@ -41,11 +38,10 @@ def isRemote(repoName, gitRepos):
 
 
 def getToken():
-    try:
-        with open(TOKEN_PATH) as target:
-            return target.read().strip()
-    except:
+    token = os.environ.get('GIT_TOKEN', None)
+    if not token:
         error('Can not read the token')
+    return token
 
 
 # Set the Variables
