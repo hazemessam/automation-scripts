@@ -4,10 +4,14 @@ Get direct link or download youtube streams (videos & audio).
 """
 
 import pafy
-from sys import argv
+from sys import argv, exit
 from termcolor import colored
 from os import getenv
 
+
+if len(argv) != 2 or not argv[1].startswith('https://www.youtube.com'):
+    print('Usage:\n\tytb <youtube video link>')
+    exit()
 
 link = argv[1]
 pfy_obj = pafy.new(url=link)
