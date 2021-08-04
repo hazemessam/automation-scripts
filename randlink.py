@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
 """
-Simple tool allow you to store (local or web) links
-and then you can pop a random link and open it.
+A simple tool allows you to store (local or web) links
+and then you can pop a random link and open it. 
+It will help you when you have many links to check 
+and you don't know which one you should pick first.
 """
 
 import os

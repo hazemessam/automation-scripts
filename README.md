@@ -1,5 +1,14 @@
 # Automation Scripts
 
+## Scripts:
+- [create.py](#createpy)
+- [ytb.py](#ytbpy)
+- [ptime.py](#ptimepy)
+- [mkpdf.py](#mkpdfpy)
+- [randlink.py](#randlinkpy)
+
+---
+
 ## [create.py](create.py)
 Automate the process of creating a remote GitHub repo and initializing a local repo and pushing its files to the remote repo all with one command.
 
@@ -33,7 +42,7 @@ All done!
 ---
 
 ## [ytb.py](ytb.py)
-Get direct link or download youtube streams (videos & audios).
+Download or get the direct link to download youtube streams as videos or audios.
 
 ### Requirements:
 -   Install `pafy` package.
@@ -44,7 +53,7 @@ Get direct link or download youtube streams (videos & audios).
 
 ### Usage:
 ```
-hazem@wsl:scripts (master)$ ./ytb.py https://www.youtube.com/watch?v=OKEhEgD3uV4
+$ ./ytb.py https://www.youtube.com/watch?v=OKEhEgD3uV4
 Title: Dependency Inversion (DIP) - SOLID Design Principles
 -----------------------------------------------------------
 0) mp4@360p -> 12.4MB
@@ -62,7 +71,7 @@ https://manifest.googlevideo.com/api/manifest/dash/expire/1627562151/ei/R0wCYY7X
 ```
 
 ```
-hazem@wsl:scripts (master)$ ./ytb.py https://www.youtube.com/watch?v=OKEhEgD3uV4
+$ ./ytb.py https://www.youtube.com/watch?v=OKEhEgD3uV4
 Title: Dependency Inversion (DIP) - SOLID Design Principles
 -----------------------------------------------------------
 0) mp4@360p -> 12.4MB
@@ -119,7 +128,7 @@ $ ls
 ---
 
 ## [randlink.py](randlink.py)
-Simple tool allows you to store (local or web) links and then you can pop a random link and open it.
+A simple tool allows you to store (local or web) links and then you can pop a random link and open it. It will help you when you have many links to check and you don't know which one you should pick first.
 
 ### Requirements:
 -   Set `DB_FILE_PATH` variable to the path of the file that you want store links in.

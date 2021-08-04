@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 """
-Get direct link or download youtube streams (videos & audio).
+Download or get the direct link to download youtube streams as videos or audios.
 """
 
 import pafy
