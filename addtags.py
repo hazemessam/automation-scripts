@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """ Add metadata to the Quran mp3 files """
 
 import os
