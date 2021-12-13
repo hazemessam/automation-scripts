@@ -22,7 +22,7 @@ def attatch_tags(filepath):
     if audiofile.tag.artist is None: audiofile.tag.artist = artist
     if audiofile.tag.genre is None: audiofile.tag.genre = 'Quran'
     if audiofile.tag.album is None: audiofile.tag.album = 'Quran'
-    if audiofile.tag.track_num is None: audiofile.tag.track_num = track_num
+    if audiofile.tag.track_num[0] is None: audiofile.tag.track_num = (track_num, 114)
     if len(audiofile.tag.images) == 0:
         audiofile.tag.images.set(ImageFrame.FRONT_COVER, open(IMG_PATH, 'rb').read(), IMG_TYPE)
 
