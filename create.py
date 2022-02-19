@@ -96,7 +96,7 @@ gitRepo = gitUser.create_repo(repoName, private=isPrivate, auto_init=False)
 # Create the Local Repo
 os.chdir(cwdPath)
 if not os.path.exists('README.md'):
-    os.system(f'echo # {repoName} >> README.md')
+    os.system(f'echo "# {repoName}" >> README.md')
 os.system('git init')
 os.system('git add .')
 os.system(f'git commit -m "{initCommitMsg}"')
