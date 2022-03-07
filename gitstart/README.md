@@ -1,5 +1,9 @@
 ## [gitstart.py](gitstart.py)
-Automate the process of creating a remote GitHub repo and initializing a local repo and pushing its files to the remote repo all with one command.
+Python script automates the process of:
+- Creating a remote GitHub repo.
+- Initializing a local repo.
+- Connecting the local repo to the remote repo.
+- Pushing the init commit to the remote repo.
 
 ### Requirements:
 -   Install `PyGithub` package.
@@ -10,20 +14,20 @@ Automate the process of creating a remote GitHub repo and initializing a local r
 
 ### Usage:
 ```
-$ ./gitstart.py
-> Enter repo name (default: test): testrepo
-> Is it a private repo (y/n) (default: public): y
-> Enter initial commit msg (default: init commit):
-
-Initialized empty Git repository in /home/hazem/test/.git/
-[master (root-commit) afc2f6f] init commit
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 test.py
+$ python3 gitstart.py
+> Remote repo name [test-dir]: test-repo
+> Public repo (yes/no) [yes]:
+> Init commit msg [init commit]:
+Initialized empty Git repository in /home/hazem/test/test-dir/.git/
+[master (root-commit) bbe1e12] init commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 215 bytes | 215.00 KiB/s, done.
+Writing objects: 100% (3/3), 227 bytes | 227.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/hazemessam/testrepo.git
- * [new branch]      master -> master
+To https://github.com/hazemessam/test-repo.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
 All done!
 ```
