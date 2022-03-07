@@ -11,8 +11,6 @@ Usage:
     randlink [--push | --add | -a] <link>   :       add a new link
     randlink [--pop | --get | -g]           :       pop a random link then open it
     randlink [--list | -l]                  :       list all links
-```
-```
 $ ./randlink.py --add https://www.youtube.com
 $ ./randlink.py --add /home/hazem/media/test.png
 $ ./randlink.py --list
