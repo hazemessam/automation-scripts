@@ -1,10 +1,9 @@
 # Automation Scripts
 
 ## Scripts:
-- [create.py](/create/)
+- [gitstart.py](/gitstart/)
 - [ptime.py](/ptime/)
 - [mkpdf.py](/mkpdf/)
 - [ytb.py](/ytb/)
 - [randlink.py](/randlink/)
-
 ---

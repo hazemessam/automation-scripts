@@ -1,4 +1,4 @@
-## [create.py](create.py)
+## [gitstart.py](gitstart.py)
 Automate the process of creating a remote GitHub repo and initializing a local repo and pushing its files to the remote repo all with one command.
 
 ### Requirements:
@@ -10,7 +10,7 @@ Automate the process of creating a remote GitHub repo and initializing a local r
 
 ### Usage:
 ```
-$ ./create.py
+$ ./gitstart.py
 > Enter repo name (default: test): testrepo
 > Is it a private repo (y/n) (default: public): y
 > Enter initial commit msg (default: init commit):
